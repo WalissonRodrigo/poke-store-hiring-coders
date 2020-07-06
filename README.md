@@ -1,9 +1,9 @@
 # Poke Store
 
-Pokemon e-commerce proposed as a challenge for the Hiring Coders program of the Gama Academy. Versão Demo(https://poke-store-hiring-coders.netlify.app/)
+Pokemon e-commerce proposed as a challenge for the Hiring Coders program of the Gama Academy. 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8cdc39fd-a99d-42d6-b52d-b9f4348e6821/deploy-status)](https://app.netlify.com/sites/poke-store-hiring-coders/deploys)
-
+[https://poke-store-hiring-coders.netlify.app/](Version Demo)
 ## Available Scripts
 
 In the project directory, you can run:
