@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Poke Store
+
+Pokemon e-commerce proposed as a challenge for the Hiring Coders program of the Gama Academy.
 
 ## Available Scripts
 
