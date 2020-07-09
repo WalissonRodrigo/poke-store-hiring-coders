@@ -5,7 +5,7 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Zoom from "@material-ui/core/Zoom";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  rootScrollTop: {
     position: "fixed",
     bottom: theme.spacing(2),
     right: theme.spacing(2),
@@ -36,7 +36,11 @@ function ScrollTop(props) {
 
   return (
     <Zoom in={trigger}>
-      <div onClick={handleClick} role="presentation" className={classes.root}>
+      <div
+        onClick={handleClick}
+        role="presentation"
+        className={classes.rootScrollTop}
+      >
         {children}
       </div>
     </Zoom>
