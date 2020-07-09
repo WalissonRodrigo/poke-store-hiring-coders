@@ -6,7 +6,7 @@ import {
   CLOSE_CART,
   OPEN_CART,
   CLEAR_CART,
-} from "../actions";
+} from "../../actions";
 
 const initialState = {
   cart: {},
