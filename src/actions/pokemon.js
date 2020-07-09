@@ -1,6 +1,10 @@
 export const POKEMON_SEARCH = "POKEMON_SEARCH";
 export const POKEMON_FETCH = "POKEMON_FETCH";
+export const POKEMON_FETCH_ADD = "POKEMON_FETCH_ADD";
+export const POKEMON_FETCH_GET = "POKEMON_FETCH_GET";
+export const POKEMON_FETCH_PAGINATE = "POKEMON_FETCH_PAGINATE";
 export const POKEMON_FETCH_LOADING = "POKEMON_FETCH_LOADING";
+export const POKEMON_FETCH_LOAD_FINISH = "POKEMON_FETCH_LOAD_FINISH";
 export const POKEMON_FETCH_SUCCESS = "POKEMON_FETCH_SUCCESS";
 export const POKEMON_FETCH_ERROR = "POKEMON_FETCH_ERROR";
 export const CLOSE_SEARCH_DRAWER = "CLOSE_SEARCH_DRAWER";
@@ -20,9 +24,34 @@ export const pokemonFetch = () => {
   };
 };
 
+export const pokemonGetFetch = () => {
+  return {
+    type: POKEMON_FETCH_GET,
+  };
+};
+
+export const pokemonFetchAdd = (data) => {
+  return {
+    type: POKEMON_FETCH_ADD,
+    payload: data,
+  };
+};
+
+export const pokemonFetchPaginate = (data) => {
+  return {
+    type: POKEMON_FETCH_PAGINATE,
+    payload: data,
+  };
+};
+
 export const setPokemonFetchLoading = () => {
   return {
     type: POKEMON_FETCH_LOADING,
+  };
+};
+export const setPokemonFetchLoadFinish = () => {
+  return {
+    type: POKEMON_FETCH_LOAD_FINISH,
   };
 };
 

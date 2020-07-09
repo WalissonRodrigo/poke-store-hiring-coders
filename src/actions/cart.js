@@ -40,13 +40,13 @@ export const clearCart = () => {
   };
 };
 
-export const closeCartDrawer = () => {
+export const closeCartDialog = () => {
   return {
     type: CLOSE_CART,
   };
 };
 
-export const openCartDrawer = () => {
+export const openCartDialog = () => {
   return {
     type: OPEN_CART,
   };
