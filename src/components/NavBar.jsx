@@ -8,6 +8,8 @@ import InputBase from "@material-ui/core/InputBase";
 import Badge from "@material-ui/core/Badge";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import { useSelector, useDispatch } from "react-redux";
+import { openCartDialog } from "../actions";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -88,7 +90,11 @@ const useStyles = makeStyles((theme) => ({
 
 const NavBar = () => {
   const classes = useStyles();
-
+  const { qtdPokemons } = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+  const handleClickOpenCart = () => {
+    dispatch(openCartDialog());
+  };
   return (
     <div className={classes.grow}>
       <AppBar position="static">
@@ -111,8 +117,12 @@ const NavBar = () => {
           </div>
           <div className={classes.grow} />
           <div className={classes.shoppingCartButton}>
-            <IconButton aria-label="Carrinho de Compras" color="inherit">
-              <Badge badgeContent={4} color="secondary">
+            <IconButton
+              aria-label="Carrinho de Compras"
+              color="inherit"
+              onClick={handleClickOpenCart}
+            >
+              <Badge badgeContent={qtdPokemons} color="secondary">
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
