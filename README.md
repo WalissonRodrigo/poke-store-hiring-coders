@@ -1,4 +1,5 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8cdc39fd-a99d-42d6-b52d-b9f4348e6821/deploy-status)](https://app.netlify.com/sites/poke-store-hiring-coders/deploys)  [Version Demo](https://poke-store-hiring-coders.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8cdc39fd-a99d-42d6-b52d-b9f4348e6821/deploy-status)](https://app.netlify.com/sites/poke-store-hiring-coders/deploys)  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=WalissonRodrigo_poke-store-hiring-coders&metric=alert_status)](https://sonarcloud.io/dashboard?id=WalissonRodrigo_poke-store-hiring-coders)
+[Version Demo](https://poke-store-hiring-coders.netlify.app/)
 
 # Poke Store
 Pokemon e-commerce proposed as a challenge for the Hiring Coders program of the Gama Academy. 
